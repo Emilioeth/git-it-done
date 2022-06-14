@@ -20,9 +20,7 @@
 
 
   <main class="flex-row justify-space-between">
-
     <div class="col-12 col-md-4">
-
       <div class="card">
         <h3 class="card-header text-uppercase">Search By User</h3>
         <form id="user-form" class="card-body">
@@ -32,20 +30,25 @@
         </form>
       </div>
 
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search By Topic</h3>
+        <div id="language-buttons" class="card-body">
+          <button data-language="javascript" class="btn">JavaScript</button>
+          <button data-language="html" class="btn">HTML</button>
+          <button data-language="css" class="btn">CSS</button>
+        </div>
+      </div>
     </div>
-  
+
     <div class="col-12 col-md-8">
-
       <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
-      <div id="repos-container" class="list-group"></div>
-      
-    </div>
+      <div id="repos-container" class="list-group">
 
+      </div>
+    </div>
   </main>
-  
 
   <script src="./assets/js/homepage.js"></script>
-
 </body>
 
 </html>
